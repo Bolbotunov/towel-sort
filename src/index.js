@@ -1,6 +1,9 @@
 
 module.exports = function towelSort (matrix) {
   let arrResult=[]
+   if (matrix === undefined) {
+    return arrResult;
+  }    
     for(let i = 0; i < matrix.length; i++){
     if(i === 0 || i%2 == 0){
       arrResult.push(matrix[i]);
@@ -10,4 +13,3 @@ module.exports = function towelSort (matrix) {
   }
 return arrResult.flat()
 }
-
